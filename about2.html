@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="header"></div>
+    <main>
+      <section id="about">
+        <div class="profile">
+          <img id="headshot" src="Images/Headshot.jpg" alt="Your Name" />
+          <h2>Jeneel Farrell</h2>
+          <h3>Skills</h3>
+          <ul>
+            Python HTML
+            <li>Skill 3</li>
+            <!-- Add more skills as needed -->
+          </ul>
+        </div>
+        <div class="description">
+          <h2>About Me</h2>
+          <p>
+            Hello, I am Jeneel Farrell. I am a sophomore computer science
+            student at Howard University with a passion for coding and
+            technology. Here's a little bit about me: [Brief introduction about
+            yourself, your interests, and your goals].
+          </p>
+        </div>
+      </section>
+    </main>
+    <div id="footer"></div>
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+      // Load the header content using JavaScript
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

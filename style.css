@@ -1,0 +1,137 @@
+/* styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    font-family: "Noto Serif Display", serif;
+    float:;
+    font-size: 75px;
+    text-align: center;
+}
+h2{
+    font-family: "Noto Serif Display", serif;
+    
+}
+
+
+.profile {
+    background-color: beige;
+    float: left;
+    width: 25%; /* Adjust the width as needed */
+    padding: 10px;
+    height: 100%;
+    text-align: center;
+}
+
+.profile img {
+    max-width: 75%;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.skills {
+    float: left;
+    width: 30%; /* Adjust the width as needed */
+    padding: 10px;
+}
+
+.description {
+
+    float: left;
+    width: 60%; /* Adjust the width as needed */
+    padding: 15px;
+    margin-left: 20px;
+}
+
+.description h2 {
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Clear the floats to prevent layout issues */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+img.headshot {
+    width: 200px;
+    border-radius: 100px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 50px;
+  }
+
+header {
+background-color: #b7b7a4;
+color: black;
+padding: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+/* Logo Styles */
+.logo {
+font-family: "Noto Serif Display", serif;
+font-size: 24px;
+font-weight: bold;
+text-transform: uppercase;
+margin-left: 20px;
+}
+
+/* Navigation Styles */
+.nav {
+margin-right: 20px;
+}
+
+.nav a {
+color: black;
+text-decoration: none;
+margin: 20px;
+}
+
+/*FOOTER STYLES*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #b7b7a4;
+    color: black;
+    padding: 100px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+img.buttons {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+#footer-left{
+    width: 50%;
+    padding: 10px;
+
+   
+}
+
+#footer-right{
+    width: 50%;
+    padding: 10px;
+   
+}
+
+
