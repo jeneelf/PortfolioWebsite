@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>About Me</title>
+  </head>
+  <body>
+    <div id="header"></div>
+    <main>
+      <section id="about">
+        <div class="profile">
+          <img id="headshot" src="Images/Headshot.jpg" alt="Your Name" />
+          <h2>Jeneel Farrell</h2>
+          <h3>Skills</h3>
+          <p>Python</p>
+          <p>JavaScript</p>
+          <p>NodeJS</p>
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>React</p>
+        </div>
+        <div class="description">
+          <div>
+            <h1>&lt;About Me/&gt;</h1>
+          </div>
+          <div>
+            <p>
+              Hello, I'm Jeneel Farrell, a sophomore computer science student at
+              Howard University. My journey into the world of technology began
+              with a curiosity that has evolved into a passion for coding and
+              problem-solving.
+            </p>
+            <p>
+              I have a strong foundation in web development, with proficiency in
+              JavaScript, CSS, and HTML, allowing me to design and create
+              interactive and visually appealing websites. Additionally, I have
+              experience in Python, a versatile language I've used for various
+              projects and problem-solving tasks. My educational journey at
+              Howard University has provided me with a solid grounding in
+              computer science principles, and I'm continually expanding my
+              skill set.
+            </p>
+
+            <p>
+              I am enthusiastic about creating web applications and contributing
+              to the open-source community. I'm excited about the opportunities
+              that lie ahead and am eager to explore new challenges and
+              collaborations within the world of computer science. Thank you for
+              visiting my portfolio, and I look forward to connecting with
+              fellow tech enthusiasts and professionals as we navigate the
+              ever-evolving landscape of technology.
+            </p>
+          </div>
+          <div>
+            <a href="Jeneel Farrell Resume Aug 2023.pdf" download>
+              <button class="buttons2">Download My Resume</button>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="footer"></div>
+    <script src="script.js">
+            fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

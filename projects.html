@@ -4,26 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Document</title>
+    <title>My Projects</title>
   </head>
   <body>
     <div id="header"></div>
     <main>
       <section id="projects">
         <div>
-          <h1>My Projects</h1>
+          <h1>&lt;My Projects/&gt;</h1>
+        </div>
+        <div class="project-rows">
+          <div class="image-box">
+            <img src="Images/PlanetPledge.jpg" />
+            <h2>Planet Pledge</h2>
+            <p>A shorted task Manager that aloows users to mage task</p>
+            <a
+              class="buttons1"
+              href="https://www.canva.com/design/DAFe9DB4xmI/zhhOI8rrPNPXwVOOqAgPDg/view?utm_content=DAFe9DB4xmI&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel#3"
+              target="_blank"
+              >View Project Deck</a
+            >
+            <button class="buttons1">Click Me2</button>
+          </div>
+          <div class="image-box">
+            <img src="Images/TaskManager.jpg" />
+            <h2>Python Task Manager</h2>
+            <p>A shorted task Manager that aloows users to mage task</p>
+            <button class="buttons1">Click Me</button>
+            <button class="buttons1">Click Me</button>
+          </div>
+
+          <div class="image-box">
+            <img src="Images/Pac-Man.jpg" />
+            <h2>Python Pac Man</h2>
+            <p>A shorted task Manager that aloows users to mage task</p>
+          </div>
+        </div>
+        <div class="project-rows">
+          <div class="image-box">
+            <img src="Images/Pacman.gif" />
+            <h2>Python Task Manager</h2>
+            <p>A shorted task Manager that aloows users to mage task</p>
+            <button class="buttons1">Click Me</button>
+            <button class="buttons1">Click Me2</button>
+          </div>
+          <div class="image-box">
+            <img src="Images/Pacman.gif" />
+            <h2>Python Task Manager</h2>
+            <p>A shorted task Manager that aloows users to mage task</p>
+            <button class="buttons1">Click Me</button>
+            <button class="buttons1">Click Me</button>
+          </div>
+
+          <div class="image-box">
+            <img src="Images/Pacman.gif" />
+            <h2>Python Task Manager</h2>
+            <p>A shorted task Manager that aloows users to mage task</p>
+          </div>
         </div>
       </section>
     </main>
     <div id="footer"></div>
     <script>
-      // Load the header content using JavaScript
       fetch("header.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("header").innerHTML = data;
         });
-      // Load the header content using JavaScript
       fetch("footer.html")
         .then((response) => response.text())
         .then((data) => {

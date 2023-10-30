@@ -1,14 +1,20 @@
 /* styles.css */
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@600&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*GENARAL FONT STYLES*/
 p{
     font-family: 'Montserrat', sans-serif;
+    padding: 10px;
 }
 h1{
     font-family: "Noto Serif Display", serif;
-    float:;
     font-size: 75px;
     text-align: center;
 }
@@ -16,14 +22,48 @@ h2{
     font-family: "Noto Serif Display", serif;
     
 }
+a{
+    text-decoration: none;
+}
+/*GENARAL FONT STYLES*/
+.buttons1{
+    background-color:#CB997E; /* Button background color */
+    color: #000000; /* Button text color */
+    border: none; /* Remove button border */
+    padding: 5px 10px; /* Button padding */
+    margin: 10px;
+    font-size: 14px; /* Button text size */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.buttons1:hover{
+    background-color: #e29165;
+    font-weight: bold;
+}
 
-
+.buttons2{
+    display: flex;
+    align-items: center;
+    background-color:#FFE8D6;
+    color: #000000; 
+    border: none; 
+    padding: 5px 10px; 
+    font-size: 14px; /* Button text size */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif; 
+}
+ 
+.buttons2:hover{
+    background-color: #CB997E;
+    font-weight: bold;
+}
 .profile {
-    background-color: beige;
+    background-color: #FFE8D6;
     float: left;
-    width: 25%; /* Adjust the width as needed */
-    padding: 10px;
-    height: 100%;
+    width: 30%;
+    height: 100vh;
     text-align: center;
 }
 
@@ -33,72 +73,113 @@ h2{
     margin-top: 20px;
 }
 
-.skills {
-    float: left;
-    width: 30%; /* Adjust the width as needed */
-    padding: 10px;
-}
-
 .description {
-
-    float: left;
     width: 60%; /* Adjust the width as needed */
     padding: 15px;
-    margin-left: 20px;
-}
+    margin-left: 35%;  /* Center horizontally by setting left and right margins to "auto" */
+};
+
 
 .description h2 {
     margin-top: 0;
+    text-align: center;
+    font-size: larger;
 }
 
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
-}
+.project-rows{
+    display: flex; /* Use flexbox to create a horizontal row */
+    justify-content: space-between; /* Distribute space evenly between images */
+    align-items: center;
+    margin: 0 20px; 
 
+}
+.project-rows img {
+    max-width: 100%; /* Adjust the maximum width of each image */
+    height: auto; /* Maintain aspect ratio */
+}
 /* Clear the floats to prevent layout issues */
 section:after {
     content: "";
     display: table;
     clear: both;
 }
+@media (max-width: 650px) {
+    .project-rows {
+        flex-direction: column; /* Stack images vertically */
+        text-align: center; /* Center-align the images */
+    }
+}
+.image-box {
+    width: 30%; /* Adjust the width of each box */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a light shadow */
+    margin: 10px; /* Add margin to space out the boxes */
+    padding: 10px; /* Add padding for spacing inside the boxes */
+    text-align: center; /* Center-align text within the boxes */
+    display: inline-block; /* Display boxes horizontally */
+    border-radius: 10px;
+}
 
-img.headshot {
-    width: 200px;
-    border-radius: 100px;
-    float: left;
-    margin-top: 30px;
-    margin-left: 40px;
-    margin-right: 50px;
-  }
+.image-box img {
+    max-width: 100%; /* Ensure the image fits within the box */
+}
+
+.image-text {
+    font-size: 14px; /* Style the text size */
+    margin-top: 10px; /* Add space between the image and text */
+}
+
+
 
 header {
-background-color: #b7b7a4;
-color: black;
-padding: 20px;
-display: flex;
-justify-content: space-between;
-align-items: center;
+    width: 100vw;
+    background-color: #b7b7a4;
+    color: black;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Logo Styles */
 .logo {
 font-family: "Noto Serif Display", serif;
-font-size: 24px;
+font-size: 20px;
 font-weight: bold;
 text-transform: uppercase;
-margin-left: 20px;
+padding: 0 24px;
+text-align: left;
 }
 
 /* Navigation Styles */
-.nav {
-margin-right: 20px;
+.navMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+  }
+.nav-link {
+    color: black;
+    text-decoration: none;
+    margin: 20px;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.7s ease;
 }
 
-.nav a {
-color: black;
-text-decoration: none;
-margin: 20px;
+.nav-link:hover {
+    font-weight: bold;
+}
+.nav-item{
+    list-style: none
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #000000;
 }
 
 /*FOOTER STYLES*/
@@ -108,7 +189,7 @@ footer {
     background-color: #b7b7a4;
     color: black;
     padding: 100px;
-    margin-top: 200px;
+  
     display: flex;
     justify-content: space-between;
     align-items: center;
